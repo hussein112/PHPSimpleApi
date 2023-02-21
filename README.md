@@ -1,2 +1,2 @@
 # PHPSimpleApi
-Simple PHP API
+Simple PHP REST API

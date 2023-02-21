@@ -1,0 +1,58 @@
+// Insert new User
+POST http://localhost/phpApi/user
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "username": "_John",
+    "email": "John@gmail.com",
+    "password": "123"
+}
+
+
+###
+
+GET http://localhost/phpApi/user/36
+###
+
+
+// Get All Users
+GET http://localhost/phpApi/user
+
+###
+
+
+DELETE http://localhost/phpApi/user/38
+
+###
+
+
+// Delete All Records
+###
+DELETE http://localhost/phpApi/user
+
+###
+
+PATCH http://localhost/phpApi/user/40
+Content-Type: application/json
+
+{
+    "name": "Anthony",
+    "username": "Anthon",
+    "email": "antho@gmail.com",
+    "password": "abc"
+}
+
+// Not ALlowed
+###
+PUT http://localhost/phpApi/user/40
+Content-Type: application/json
+
+{
+    "name": "Anthony",
+    "username": "Anthon",
+    "email": "antho@gmail.com",
+    "password": "abc"
+}
+
+###
